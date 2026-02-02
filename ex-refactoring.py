@@ -1,44 +1,39 @@
 # Order Processing System - Refactoring Exercise
 # This code works but has several code smells. Can you identify and fix them?
 
-def process(d, t, x):
-    # d is data, t is type, x is extra
-    result = []
+def process(data, type, extra):
+    amount = data["amount"]
+    member = data["member"]
+    disc = 0
 
     # Calculate discount
-    if t == 1:
-        if d["amount"] > 100:
-            if d["member"] == True:
-                disc = d["amount"] * 0.15
-            else:
-                disc = d["amount"] * 0.10
+ if order_type == 1:
+        if amount > 100:
+            disc = amount * (0.15 if member else 0.10)
         else:
-            if d["member"] == True:
-                disc = d["amount"] * 0.05
-            else:
-                disc = 0
-    elif t == 2:
-        if d["amount"] > 100:
-            if d["member"] == True:
-                disc = d["amount"] * 0.20
-            else:
-                disc = d["amount"] * 0.15
-        else:
-            if d["member"] == True:
-                disc = d["amount"] * 0.10
-            else:
-                disc = d["amount"] * 0.05
+            disc = amount * 0.05 if member else 0
 
-    final = d["amount"] - disc
+    elif order_type == 2:
+        if amount > 100:
+            disc = amount * (0.20 if member else 0.15)
+        else:
+            disc = amount * (0.10 if member else 0.05)
+
+    else:
+        raise ValueError("Unsupported order type")
+
+    subtotal = amount - disc
+    
 
     # Add tax
-    final = final + (final * 0.08)
+    tax=0.08*subtotal
+    final=subtotal+tax
 
     # Format output
     print("Order processed")
-    print("Original: " + str(d["amount"]))
+    print("Original: " + str(amount))
     print("Discount: " + str(disc))
-    print("Tax: " + str(final * 0.08))
+    print("Tax: " + str(tax))
     print("Final: " + str(final))
 
     # Log the order

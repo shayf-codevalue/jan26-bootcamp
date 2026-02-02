@@ -1,0 +1,20 @@
+def primee():
+	n=int(input("enter a number and I will give you all the primes number up to that number:"))
+	isprime = False
+	if n >= 2:
+		print("2")
+	for i in range (3 ,n+1):
+		if i%2 == 0: 
+		 pass
+		for x in range (2,i):
+			if i%2 == 0: 
+			 pass
+			if i%x == 0:
+				break
+			else: 
+				isprime = True
+		if isprime == True:
+			print(i)
+					
+
+primee()

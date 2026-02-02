@@ -13,7 +13,7 @@ int main()
 		    }
 	    }
 	    if(p==true){
-		    std:std::cout << i << std::endl;
+		   std::cout << i << std::endl;
 	    }
 	    i++;
 	    p=true;

@@ -10,6 +10,7 @@ int main()
 	    for(int k=2;k<i;k++){
 		    if(i%k==0){
 			    p=false;
+				break;
 		    }
 	    }
 	    if(p==true){

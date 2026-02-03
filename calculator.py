@@ -6,7 +6,7 @@ num2 = sys.argv[3]
  
 def calculate(op, a, b):
     if op == 'add':
-        return a + b
+        return float(a) + float(b)
     if op == 'subtract':
         return float(a) - float(b)
     if op == 'multiply':

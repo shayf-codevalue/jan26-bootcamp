@@ -14,7 +14,6 @@ def calculate(op, a , b):
     if op == 'divide':
         return float(a) / float(b)
     
-    return 'Unknown operation'
- 
+    return 'Unknown operation sorry :( !'
 result = calculate(operation, num1, num2)
 print(f'Result: {result}')

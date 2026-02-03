@@ -5,16 +5,16 @@ const num2 = args[2];
  
 function calculate(op, a, b) {
     if (op === 'add') {
-        // TODO: RETURN HERE
+        return a + b;
     }
     if (op === 'subtract') {
-        // TODO: RETURN HERE
+        return a - b;
     }
     if (op === 'multiply') {
-        // TODO: RETURN HERE
+        return a * b;
     }
     if (op === 'divide') {
-        // TODO: RETURN HERE
+        return a / b;
     }
     return 'Unknown operation';
 }

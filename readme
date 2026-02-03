@@ -7,12 +7,12 @@ python calculator.py add 5 3
 
 ```
 python calculator.py subtract 5 3
-# Result: 8
+# Result: 2
 ```
 
 ```
 python calculator.py multiply 5 3
-# Result: 8
+# Result: 15
 ```
 
 ```

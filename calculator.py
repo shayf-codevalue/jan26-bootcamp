@@ -1,5 +1,6 @@
 import sys
- 
+ # Usage: python calculator.py <operation> <num1> <num2>
+ # Example: python calculator.py add 5 10
 operation = sys.argv[1]
 num1 = sys.argv[2]
 num2 = sys.argv[3]
@@ -19,7 +20,7 @@ def calculate(op, a, b):
     if op == 'divide':
         # TODO: RETURN HERE
         if b == 0:
-            return 'Error: Division by zero'
+            return 'Error: Division by zero and is not allowed.'
         return a/b
     return 'Unknown operation'
  

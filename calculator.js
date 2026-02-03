@@ -4,20 +4,21 @@ const num1 = Number(args[1]);
 const num2 = Number(args[2]);
  
 function calculate(op, a, b) {
-    if (op === 'add') {
-        return a + b;
-    }
-    if (op === 'subtract') {
-        return a - b;
-    }
-    if (op === 'multiply') {
-        return a * b;
-    }
-    if (op === 'divide') {
-        return a / b;
-    }
-    return 'Unknown operation';
+  if (op === "add") {
+    return a + b;
+  }
+  if (op === "subtract") {
+    return a - b;
+  }
+  if (op === "multiply") {
+    return a * b;
+  }
+  if (op === "divide") {
+    if (b === 0) return "Cannot divide by zero";
+    return a / b;
+  }
+  return "Unknown operation";
 }
- 
+
 const result = calculate(operation, num1, num2);
-console.log('Result: ' + result);
+console.log("Result: " + result);

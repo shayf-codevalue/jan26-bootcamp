@@ -4,15 +4,16 @@ operation = sys.argv[1]
 num1 = sys.argv[2]
 num2 = sys.argv[3]
  
-def calculate(op, a, b):
+def calculate(op, a , b):
     if op == 'add':
-        # TODO: RETURN HERE
+        return float(a) + float(b)
     if op == 'subtract':
-        # TODO: RETURN HERE
+        return float(a) - float(b)
     if op == 'multiply':
-        # TODO: RETURN HERE
+        return float(a) * float(b)
     if op == 'divide':
-        # TODO: RETURN HERE
+        return float(a) / float(b)
+    
     return 'Unknown operation'
  
 result = calculate(operation, num1, num2)

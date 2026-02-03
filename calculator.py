@@ -11,7 +11,8 @@ def calculate(op, a, b):
         return a - b
     if op == 'multiply':
         return a * b
-    if op == 'divide':
+    if op == 'divide' and b!=0 :
+
         return a / b
     return 'Unknown operation'
 

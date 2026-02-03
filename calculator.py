@@ -7,17 +7,14 @@ num2 = sys.argv[3]
 def calculate(op, a, b):
     a=int(a)
     b=int(b)
+    op = op.lower()
     if op == 'add':
-        # TODO: RETURN HERE
         return a+b
     if op == 'subtract':
-        # TODO: RETURN HERE
         return a-b
     if op == 'multiply':
-        # TODO: RETURN HERE
         return a*b
     if op == 'divide':
-        # TODO: RETURN HERE
         return a/b
     return 'Unknown operation'
  

@@ -18,6 +18,8 @@ def calculate(op, a, b):
         return a*b
     if op == 'divide':
         # TODO: RETURN HERE
+        if b == 0:
+            return 'Error: Division by zero'
         return a/b
     return 'Unknown operation'
  

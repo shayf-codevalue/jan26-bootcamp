@@ -1,10 +1,8 @@
 import sys
  
 operation = sys.argv[1]
-num1 = sys.argv[2]
-num1 = int(num1)
-num2 = sys.argv[3]
-num2 = int(num2)
+num1 = int(sys.argv[2])
+num2 = int(sys.argv[3])
  
 def calculate(op, a, b):
     if op == 'add':

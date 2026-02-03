@@ -22,8 +22,7 @@ def calculate(op, a, b):
         if b == 0:
             return 'Error: Division by zero and is not allowed.'
         return a/b
-    return 'Unknown operation saas'
-c=100
+    return 'Unknown operation, we are traing to get a conflict'
  
 result = calculate(operation, num1, num2)
 print(f'Result: {result}')

@@ -12,7 +12,9 @@ def calculate(op, a , b):
     if op == 'multiply':
         return float(a) * float(b)
     if op == 'divide':
-        return float(a) / float(b)
+        if float(b)!=0:
+            return float(a) / float(b)
+    return 'divition by 0 is ilegal'
     
     return 'Unknown operation'
  

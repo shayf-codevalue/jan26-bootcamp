@@ -20,6 +20,7 @@ def calculate(op, a, b):
         # TODO: RETURN HERE
         return a/b
     return 'Unknown operation'
+c=100
  
 result = calculate(operation, num1, num2)
 print(f'Result: {result}')
